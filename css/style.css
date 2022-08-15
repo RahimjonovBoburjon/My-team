@@ -1,0 +1,46 @@
+@import url(normalize.css);
+@import url(header.css);
+@import url(banner.css);
+@import url(build.css);
+@import url(start.css);
+@import url(footer.css);
+@import url(deliver.css);
+
+
+.gen-card__title {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.gen-card__subtitle {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 167%;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1072px) {
+    .gen-card__title  {
+        font-size: 38px;
+    }
+
+    .gen-card__subtitle {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gen-card__title  {
+        padding-bottom: 50px;
+    }
+
+    .gen-card__subtitle  {
+        padding-bottom: 50px;
+    }
+}

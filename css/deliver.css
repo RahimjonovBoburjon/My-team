@@ -1,0 +1,141 @@
+.deliver {
+    background: #004047;
+    position: relative;
+    z-index: 1;
+}
+
+.deliver::after {
+    position: absolute;
+    content: url(../images/sdf.png);
+    top: 0;
+    left: 0;
+}
+.deliver::before {
+    position: absolute;
+    content: url(../images/Group\ 8\ \(1\).png);
+    bottom: 0;
+    right: 0;
+    transform: translateY(25%);
+}
+
+.deliver__wrapper {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 140px 0;
+}
+
+.w-card__title {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.w-card__title-active {
+    color: #79C8C7;
+}
+
+.w-card__bossblock {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.w-card__block {
+    width: 30%;
+    position: relative;
+}
+
+.w-card__img {
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+}
+
+.w-card__subtitle {
+    position: absolute;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 167%;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 2;
+    top: 30px;
+}
+
+.w-card__title1 {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    color: #79C8C7;
+    padding-top: 45%;
+}
+
+.w-card__suptitle {
+    font-family: 'Livvic';
+    font-size: 13px;
+    line-height: 138%;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 2px;
+}
+
+.w-card__icon {
+    display: block;
+    margin: 0 auto;
+    padding-top: 32px;
+}
+
+@media (max-width: 1072px) {
+    .w-card__title1 {
+        padding-top: 65%;
+    }
+}
+
+@media (max-width: 915px) {
+    .w-card__title1 {
+        padding-top: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .w-card__bossblock {
+        display: table;
+    }
+
+    .w-card__block {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .w-card__title1 {
+        padding-top: 15%;
+    }
+
+    .w-card__img {
+        left: 45%;
+    }
+}
+
+@media (max-width: 625px) {
+    .w-card__title1 {
+        padding-top: 20%;
+    }
+}
+
+@media (max-width: 545px) {
+    .w-card__title1 {
+        padding-top: 25%;
+    }
+}

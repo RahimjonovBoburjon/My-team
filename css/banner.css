@@ -1,0 +1,137 @@
+.banner {
+    background: #014E56;
+    position: relative;
+    z-index: 0;
+}
+
+.banner__wrapper {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 220px 0;
+}
+
+.banner::after {
+    position: absolute;
+    content: url(../images/as.png);
+    left: 0;
+    top: 32%;
+    transform: translateX(-60%);
+}
+
+.banner::before {
+    position: absolute;
+    content: url(../images/disk-bottom.png);
+    bottom: 0;
+    right: 130px;
+    transform: translateY(50%);
+}
+
+.b-card__left {
+    width: 50%;
+}
+
+.b-card__title {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.b-card__title-active {
+    color: #F67E7E;
+}
+
+.b-card__right {
+    width: 40%;
+}
+
+.b-card__line {
+    width: 50px;
+    height: 4px;
+    background: #79C8C7;
+}
+
+.b-card__subtitle {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #FFFFFF;
+    padding-top: 60px;
+}
+
+@media (max-width: 1072px) {
+    .b-card__title {
+        font-size: 70px;
+    }
+
+    .b-card__subtitle {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner__wrapper {
+        display: table;
+    }
+
+    .b-card__title {
+        text-align: center;
+        padding: 0 25%;
+    }
+
+    .b-card__line {
+        display: none;
+    }
+
+    .b-card__subtitle {
+        text-align: center;
+        padding: 60px 21%;
+    }
+
+    .b-card__right {
+        width: 100%;
+    }
+
+    .b-card__left {
+        width: 100%;
+    }
+
+    .banner::before{
+        right: 20%;
+    }
+}
+
+@media (max-width: 565px) {
+    .banner::before{
+        right: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner::before{
+        right: 10%;
+    }
+}
+
+@media (max-width: 575px) {
+    .b-card__title {
+        padding: 0 5%;
+    }
+
+    .b-card__subtitle {
+        font-size: 16px;
+        padding: 10%;
+    }
+}
+
+@media (max-width: 1270px) {
+    .banner::after {
+        display: none;
+    }
+}

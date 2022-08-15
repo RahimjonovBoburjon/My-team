@@ -1,0 +1,87 @@
+.start {
+    background: #F67E7E;
+    position: relative;
+    z-index: 2;
+}
+
+.start::after {
+    position: absolute;
+    content: url(../images/Group\ 8\ \(2\).png);
+    bottom: 0;
+    left: 0;
+    transform: translateY(45%);
+}
+
+.start__wrapper {
+    width: 100%;
+    display: flex;
+    padding: 106px 0;
+}
+
+.s-card__block {
+    display: contents;
+}
+
+.s-card__title {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    color: #012F34;
+}
+
+.s-card__btn {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #012F34;
+    border: 2px solid #012F34;
+    border-radius: 24px;
+    padding: 8px 28px;
+    transition: 400ms;
+    display: block;
+    margin: 0 0 0 auto;
+}
+
+.s-card__btn:hover {
+    color: #000;
+    background: #fff;
+    border: 2px solid #fff;
+}
+
+@media (max-width: 690px) {
+    .s-card__title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .s-card__title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 556px) {
+    .s-card__title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 468px) {
+    .s-card__block {
+        display: table;
+    }
+
+    .s-card__title {
+        font-size: 46px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .s-card__btn {
+        margin: 0 33%;
+    }
+}
